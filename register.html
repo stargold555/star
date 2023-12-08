@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #06cb70;
+            font-family: 'Prompt', sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            min-height: 100vh;
+        }
+
+        .card-img {
+            max-width: 125px;
+            padding: 2px;
+        }
+
+        .card-header {
+            background-color: #1310eb;
+        }
+
+        small {
+            font-size: smaller;
+            color: #b2bccc;
+        }
+
+        . {
+            color: #dfebff;
+        }
+
+        .form-control {
+            border-radius: 10px;
+            background-color: #dfeeff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header text-center">
+                <img src="https://i.ibb.co/KjFP4bp/photo-2023-10-24-16-18-09.jpg" class="card-img-top card-img" alt="...">
+            </div>
+
+            <div class="card-body">
+                <form id="mainform">
+                    <div class="row align-items-center mx-2">
+                        <div class="col-md-3">phone</div>
+                        <div class="col">
+                            <input type="text" name="phone" id="phone" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col"><small class="">&nbsp&nbsp;&nbsp;&nbsp;(ใส่เบอร์โทรสมาชิกใหม่)</small></div>
+                    </div>
+                    <div class="row align-items-center mx-2 mt-3 mt-md-3">
+                        <div class="col-md-3">ไอดีไลน์</div>
+                        <div class="col">
+                            <input type="text" name="idline" id="idline" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col"><small class="">&nbsp&nbsp;&nbsp;&nbsp;(ใส่ไอดีไลน์ของท่าน)</small></div>
+                    </div>
+                    <div class="row align-items-center mx-2 mt-3 mt-md-3">
+                        <div class="col-md-3">ชื่อบัญชี</div>
+                        <div class="col">
+                            <input type="text" name="bank" id="bank" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col"><small class="">&nbsp&nbsp;&nbsp;&nbsp;(ใส่ชื่อบัญชีของท่าน)</small></div>
+                    </div>
+                    <div class="row align-items-center mx-2 mt-3 mt-md-3">
+                        <div class="col-md-3">เลขที่บัญชี</div>
+                        <div class="col">
+                            <input type="text" name="bankaccount" id="bankaccount" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col"><small class="">&nbsp&nbsp;&nbsp;&nbsp;(ใส่เลขที่บัญชีของท่าน)</small></div>
+                    </div>
+                    <div class="row align-items-center mx-2 mt-3 mt-md-3">
+                        <div class="col-md-3">เลือกธนาคาร</div>
+                        <div class="col">
+                            <select type="text" name="bankname" id="bankname" class="form-control" required>
+                                <option value="" selected disabled>เลือก...</option>
+                                <option value='ธนาคาร true wallet'>ธนาคาร true wallet</option>
+                                <option value='ธนาคารกรุงเทพ'>ธนาคารออมสิน</option>
+                                <option value='ธนาคารกรุงเทพ'>ธนาคารกรุงเทพ</option>
+                                <option value='ธนาคารกรุงไทย'>ธนาคารกรุงไทย</option>
+                                <option value='ธนาคารกรุงศรีอยุธยา'>ธนาคารกรุงศรีอยุธยา</option>
+                                <option value='ธนาคารกสิกรไทย'>ธนาคารกสิกรไทย</option>
+                                <option value='ธนาคารทหารไทยธนชาต'>ธนาคารทหารไทยธนชาต</option>
+                                <option value='ธนาคารซีไอเอ็มบี ไทย'>ธนาคารซีไอเอ็มบี ไทย</option>
+                                <option value='ธนาคารไทยพาณิชย์'>ธนาคารไทยพาณิชย์</option>
+                                <option value='ธนาคารสแตนดาร์ดชาร์เตอร์ด (ไทย)'>ธนาคารสแตนดาร์ดชาร์เตอร์ด (ไทย)</option>
+                                <option value='ธนาคารยูโอบี'>ธนาคารยูโอบี</option>
+                                <option value='ธนาคารทิสโก้'>ธนาคารทิสโก้</option>
+                                <option value='ธนาคารเกียรตินาคินภัทร'>ธนาคารเกียรตินาคินภัทร</option>
+                                <option value='ธนาคารแลนด์ แอนด์ เฮ้าส์'>ธนาคารแลนด์ แอนด์ เฮ้าส์</option>
+                                <option value='ธนาคารไอซีบีซี (ไทย)'>ธนาคารไอซีบีซี (ไทย)</option>
+                                <option value='ธนาคารไทยเครดิต เพื่อรายย่อย'>ธนาคารไทยเครดิต เพื่อรายย่อย</option>
+                                <option value='ธนาคารเมกะ สากลพาณิชย์'>ธนาคารเมกะ สากลพาณิชย์</option>
+                                <option value='ธนาคารแห่งประเทศจีน (ไทย)'>ธนาคารแห่งประเทศจีน (ไทย)</option>
+                                <option value='ธนาคารเอเอ็นแซด (ไทย)'>ธนาคารเอเอ็นแซด (ไทย)</option>
+                                <option value='ธนาคารซูมิโตโม มิตซุย ทรัสต์ (ไทย)'>ธนาคารซูมิโตโม มิตซุย ทรัสต์ (ไทย)</option>
+                                <option value='ธนาคารซิตี้แบงก์'>ธนาคารซิตี้แบงก์</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col"><small class="">&nbsp&nbsp;&nbsp;&nbsp;(เลือกธนาคารของท่าน)</small></div>
+                    </div>
+                    <div class="row align-items-center mx-2 mt-3 mt-md-3">
+                        <div class="col-md-3">เพื่อนแนะนำ</div>
+                        <div class="col">
+                            <input type="text" name="invite" id="invite" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col"><small class="">&nbsp&nbsp;&nbsp;&nbsp;ใส่ user เพื่อน(ถ้ามี) กรณีไม่มีให้ใส่ -</small></div>
+                    </div>
+                    <div class="row align-items-center mx-2 mt-3 mt-md-3">
+                        <div class="col-md-3">โปรดเลือกโปรโมชัน</div>
+                        <div class="col">
+                            <select type="text" name="promotion" id="promotion" class="form-control" required>
+                                <option value="aa">เลือก...</option>
+                                <option value="ไม่รับโปร">ไม่รับโปร</option>
+                                <option value="ฝาก100%ทำเทินร์4เท่าสูงสุด2000บาท">ฝาก100%ทำเทินร์4เท่าสูงสุด2000บาท</option>
+                                <option value="ฝากครังต่อไป10%ทำเทินร์3เท่า">ฝากครังต่อไป10%ทำเทินร์3เท่า</option>
+                                <option value="คืนยอดเสีย10%ทุกๆวันพุธ">คืนยอดเสีย10%ทุกๆวันพุธ</option>
+                                </select>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mx-2 mt-3 mt-md-3">
+                        <div class="col">
+                            <a href="https://lin.ee/gZYW7t5J"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png" alt="ADD FRIEND" width="150" border="0"></a>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-4">
+                        <div class="col text-center">
+                            <button type="submit" class="btn btn-primary btn-lg" style="min-width: 200px; border-radius: 10rem;">ส่งข้อมูล</button>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-4">
+                        <div class="col text-center text-secondary">
+                            <i class="bi bi-exclamation-circle-fill"></i>
+                            คุณลูกค้ากรอกข้อมูลสมัครสมาชิกเรียบร้อยแล้วกดปุ่ม <span class="text-primary">"สีฟ้า" เพื่อส่งข้อมูล กรุณา add line แชทหาแอดมิน @976indev</span> เพื่อรับ user คะ
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <script>
+            $('#mainform').on('submit', function () {
+                event.preventDefault()
+                let formdata = $(this).serializeArray()
+                let data = {}
+                for (let i of formdata) {
+                    data[i.name] = i.value
+                }
+                Swal.fire({
+                    icon: 'info',
+                    title: 'กำลังส่งข้อมูล',
+                    text: 'กรุณารอสักครู่',
+                    allowOutsideClick: false
+                })
+                Swal.showLoading(Swal.getConfirmButton())
+                $.post('https://script.google.com/macros/s/AKfycbyXJQXTKx3F5jmf4nMrtRkkczC3iJAAZM8C5MN4RDs113NLCvIIqT850lGsoCk2rPyZVw/exec', data, function (res) {
+                    if (res.status == 'success') {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Success',
+                            text: 'บันทึกสำเร็จ',
+                            showConfirmButton: false,
+                            allowOutsideClick: false,
+                            timer: 1500
+                        }).then(() => {
+                            window.location = 'https://lin.ee/gZYW7t5J'
+                        })
+                    } else {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Error',
+                            text: 'บันทึกไม่สำเร็จ',
+                            confirmButtonText: 'ตกลง',
+                        })
+                    }
+                })
+            })
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
+
